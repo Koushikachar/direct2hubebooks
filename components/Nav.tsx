@@ -90,11 +90,10 @@ export default function Nav({
                   key={link.href}
                   href={link.href}
                   style={active ? { backgroundColor: "#FF6600", color: "#ffffff" } : undefined}
-                  className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                    active
+                  className={`rounded-full px-4 py-2 text-sm font-medium transition ${active
                       ? "shadow-sm"
                       : "text-brick-800 hover:bg-ember-600/10 dark:text-cream/80 dark:hover:bg-white/10"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -180,11 +179,10 @@ export default function Nav({
                   href={link.href}
                   onClick={() => setOpen(false)}
                   style={active ? { backgroundColor: "#FF6600", color: "#ffffff" } : undefined}
-                  className={`rounded-lg px-3 py-2.5 text-sm font-medium transition ${
-                    active
+                  className={`rounded-lg px-3 py-2.5 text-sm font-medium transition ${active
                       ? ""
                       : "text-brick-800 hover:bg-black/5 dark:text-cream/90 dark:hover:bg-white/10"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>
